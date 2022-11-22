@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/dao.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/dao.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/dao.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mathirst.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="太长不看速通版">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用 Hexo 搭建个人博客">
+<meta property="og:url" content="http://mathirst.github.io/2022/11/22/create-blogs-by-hexo/index.html">
+<meta property="og:site_name" content="稻年">
+<meta property="og:description" content="太长不看速通版">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-22T17:35:46.000Z">
+<meta property="article:modified_time" content="2022-11-22T22:38:17.255Z">
+<meta property="article:author" content="稻年">
+<meta property="article:tag" content="编程">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://mathirst.github.io/2022/11/22/create-blogs-by-hexo/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://mathirst.github.io/2022/11/22/create-blogs-by-hexo/","path":"2022/11/22/create-blogs-by-hexo/","title":"用 Hexo 搭建个人博客"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>用 Hexo 搭建个人博客 | 稻年</title>
+  
+
+
+
+
+
+
+  <script async defer data-website-id="" src=""></script>
+
+  <script defer data-domain="" src=""></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">稻年</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">太长不看速通版</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">细分介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.2.</span> <span class="nav-text">创建本地文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.3.</span> <span class="nav-text">运行测试服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.4.</span> <span class="nav-text">设置站点的一些信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.5.</span> <span class="nav-text">配置使用 Git 的信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.6.</span> <span class="nav-text">生成站点前先“watch”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.7.</span> <span class="nav-text">创建新网页并编辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.8.</span> <span class="nav-text">删除默认的 hello world</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.9.</span> <span class="nav-text">部署到 GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.10.</span> <span class="nav-text">换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.11.</span> <span class="nav-text">测试常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.12.</span> <span class="nav-text">报错</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">进一步设置样式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.1.</span> <span class="nav-text">图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.2.</span> <span class="nav-text">颜色</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">4.</span> <span class="nav-text">写数学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">4.0.1.</span> <span class="nav-text">TODO</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">稻年</p>
+  <div class="site-description" itemprop="description">不息，不止</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://mathirst.github.io/2022/11/22/create-blogs-by-hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="稻年">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="稻年">
+      <meta itemprop="description" content="不息，不止">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="用 Hexo 搭建个人博客 | 稻年">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          用 Hexo 搭建个人博客
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-11-22 10:35:46 / 修改时间：15:38:17" itemprop="dateCreated datePublished" datetime="2022-11-22T10:35:46-07:00">2022-11-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">工具论</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+          
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1><span id="tai-chang-bu-kan-su-tong-ban">太长不看速通版</span><a href="#tai-chang-bu-kan-su-tong-ban" class="header-anchor">#</a></h1>
+<span id="more"></span>
+<h1><span id="xi-fen-jie-shao">细分介绍</span><a href="#xi-fen-jie-shao" class="header-anchor">#</a></h1>
+<h2><span id="an-zhuang-hexo">安装 Hexo</span><a href="#an-zhuang-hexo" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 hexo</span></span><br><span class="line">sudo npm install -g hexo-cli </span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看 hexo 版本信息</span></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<h2><span id="chuang-jian-ben-di-wen-jian-jia">创建本地文件夹</span><a href="#chuang-jian-ben-di-wen-jian-jia" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用 hexo init 命令创建一个文件夹，名为 mathirst.github.io，</span></span><br><span class="line"><span class="comment"># 同时在 GitHub 创建一个同名的 project，其中 mathirst 是我的 github 用户名，</span></span><br><span class="line"><span class="comment"># 这样可以方便记忆（完全是从命名角度来说取同一个名字）</span></span><br><span class="line">hexo init mathirst.github.io</span><br><span class="line"></span><br><span class="line"><span class="comment"># 终端下切换到刚创建的文件夹</span></span><br><span class="line"><span class="built_in">cd</span> yt8yt.github.io</span><br><span class="line"></span><br><span class="line"><span class="comment"># 激活 hexo 相关的一些设置</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h2><span id="yun-xing-ce-shi-fu-wu-qi">运行测试服务器</span><a href="#yun-xing-ce-shi-fu-wu-qi" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成一个临时服务器，方便本地查看输出效果。输出为</span></span><br><span class="line"><span class="comment"># INFO  Hexo is running at &lt;http://0.0.0.0:4000/&gt;. Press Ctrl+C to stop. </span></span><br><span class="line"><span class="comment"># 按住 cmd 点击上述链接，便会自动调用默认浏览器打开这一网页；</span></span><br><span class="line"><span class="comment"># 按住 ctrl+C 便可关闭这一临时服务器</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h2><span id="she-zhi-zhan-dian-de-yi-xie-xin-xi">设置站点的一些信息</span><a href="#she-zhi-zhan-dian-de-yi-xie-xin-xi" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi 是调用 vim 来打开文件，然后可以用 vim 的方式来编辑该文件；</span></span><br><span class="line"><span class="comment"># 也可以直接双击该文件来用编辑器修改，例如默认的是XCode</span></span><br><span class="line">vi _config.yml</span><br></pre></td></tr></table></figure>
+<p>注意：写 yml 文件时，注意去掉单引号，例如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">description: xxx&#x27;s personal blog </span><br><span class="line"></span><br><span class="line">#不能是</span><br><span class="line">description: ‘xxx&#x27;s personal blog’</span><br></pre></td></tr></table></figure>
+<p>示例（没写出来的都可以不用改，取决于个人需求）</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">~~~~~~~~~~~~~~~~~~</span> <span class="string">_config.yml</span> <span class="string">~~~~~~~~~~~~~~~~~~</span></span><br><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Minhua</span> <span class="string">Cheng&#x27;s</span> <span class="string">note</span></span><br><span class="line"><span class="attr">subtitle:</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">Minhua</span> <span class="string">Cheng&#x27;s</span> <span class="string">personal</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Minhua</span> <span class="string">Cheng</span></span><br><span class="line"><span class="attr">language:</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">MST</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;&lt;http://yoursite.com/child&gt;&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">&lt;http://mathirst.github.io/&gt;</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
+<h2><span id="pei-zhi-shi-yong-git-de-xin-xi">配置使用 Git 的信息</span><a href="#pei-zhi-shi-yong-git-de-xin-xi" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装插件使得 hexo 可以部署到 git，执行一次即可</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line"><span class="comment"># 再次编辑 yml 配置文件，此时出现 Deployment 的配置</span></span><br></pre></td></tr></table></figure>
+<p>下面是示例</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">~~~~~~~~~~~~~~~~~~</span> <span class="string">_config.yml</span> <span class="string">~~~~~~~~~~~~~~~~~~</span></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: &lt;http://hexo.io/docs/deployment.html&gt;</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;https://github.com/mathirst/mathirst.github.io.git&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span> <span class="comment"># 注意，我这里改成了 gh-pages 分支（branch），如果没有最后会自动创建</span></span><br><span class="line">									 <span class="comment"># 所以在 GitHub 中的设置里也要把 GitHub Pages 的默认分支改成 gh-pages</span></span><br></pre></td></tr></table></figure>
+<h2><span id="sheng-cheng-zhan-dian-qian-xian-watch">生成站点前先“watch”</span><a href="#sheng-cheng-zhan-dian-qian-xian-watch" class="header-anchor">#</a></h2>
+<p>Hexo can watch for file changes and regenerate files immediately. Hexo will compare the SHA1 checksum of your files and only write if file changes are detected.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --watch</span><br></pre></td></tr></table></figure>
+<h2><span id="chuang-jian-xin-wang-ye-bing-bian-ji">创建新网页并编辑</span><a href="#chuang-jian-xin-wang-ye-bing-bian-ji" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建新网页，名为 first-post</span></span><br><span class="line">hexo new first-post</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">hexo new page </span><br><span class="line"></span><br><span class="line"><span class="comment">## 输出为</span></span><br><span class="line"><span class="comment"># INFO  Created: ~/***/yt8yt.github.io/source/_posts/first-post.md</span></span><br><span class="line"><span class="comment"># 可以看到实际上是本地生成了一个 markdown 文件，所以可以直接编辑 markdown 来更改最终的输出内容</span></span><br></pre></td></tr></table></figure>
+<h2><span id="shan-chu-mo-ren-de-hello-world">删除默认的 hello world</span><a href="#shan-chu-mo-ren-de-hello-world" class="header-anchor">#</a></h2>
+<p>即删掉 <strong><em>*<code>source/_posts/hello-world.md</code>*</em></strong></p>
+<h2><span id="bu-shu-dao-github">部署到 GitHub</span><a href="#bu-shu-dao-github" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首先登录 GitHub</span></span><br><span class="line">brew install gh <span class="comment"># 安装 gh 命令，因为登录会用到 gh</span></span><br><span class="line">gh auth login <span class="comment"># 登录到 GitHub，会输出一系列交互式的结果</span></span><br><span class="line"><span class="comment"># What account do you want to log into? 选第一个 GitHub.com</span></span><br><span class="line"><span class="comment"># What is your preferred protocol for Git operations? 我选的是 HTTPS</span></span><br><span class="line"><span class="comment"># Authenticate Git with your GitHub credentials? Yes</span></span><br><span class="line"><span class="comment"># How would you like to authenticate GitHub CLI? 选 Login with a web browser</span></span><br><span class="line"><span class="comment"># 同时注意（终端里）后面就会给出验证码 First copy your one-time code: xxx</span></span><br><span class="line"><span class="comment"># Press Enter to open github.com in your browser... 回车在弹窗里输入这串验证码即可</span></span><br><span class="line"><span class="comment"># 完成登录</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署（deploy）到 GitHub</span></span><br><span class="line">hexo generate &amp;&amp; hexo deploy </span><br><span class="line"><span class="comment">#或者</span></span><br><span class="line">hexo clean &amp;&amp; hexo deploy <span class="comment"># 区别是 clean = genearate + 清理缓存文件 db.json</span></span><br></pre></td></tr></table></figure>
+<p>注意：部署完刷新页面并不会立即有反应，需要等1-2分钟</p>
+<h2><span id="huan-zhu-ti">换主题</span><a href="#huan-zhu-ti" class="header-anchor">#</a></h2>
+<p>可用的主题列表见链接</p>
+<p>https://github.com/hexojs/hexo/wiki/Themes</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先下载主题，其中 </span></span><br><span class="line"><span class="comment"># &lt;repository&gt; 就是 GitHub 页面里的连接</span></span><br><span class="line"><span class="comment"># themes/&lt;theme-name&gt; 就是把主题下载到当前目录下的新文件夹 themes 里，并重命名为 theme-name</span></span><br><span class="line">git <span class="built_in">clone</span> &lt;repository&gt; themes/&lt;theme-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 具体来说，我用的是 NexT 主题，示例如下</span></span><br><span class="line"><span class="built_in">cd</span>  mathirst.github.io <span class="comment"># 确保工作路径没问题 </span></span><br><span class="line">git <span class="built_in">clone</span> &lt;https://github.com/next-theme/hexo-theme-next.git&gt; themes/NexT</span><br><span class="line"></span><br><span class="line"><span class="comment"># 再改 yml 配置文件</span></span><br><span class="line">vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: &lt;http://hexo.io/plugins/&gt;</span></span><br><span class="line"><span class="comment">## Themes: &lt;http://hexo.io/themes/&gt;</span></span><br><span class="line">theme: NexT</span><br></pre></td></tr></table></figure>
+<h2><span id="ce-shi-chang-yong-ming-ling">测试常用命令</span><a href="#ce-shi-chang-yong-ming-ling" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 仅本地测试</span></span><br><span class="line">hexo clean &amp;&amp; hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 同步到主页</span></span><br><span class="line">hexo clean &amp;&amp; hexo deploy &amp;&amp; hexo server</span><br></pre></td></tr></table></figure>
+<h2><span id="bao-cuo">报错</span><a href="#bao-cuo" class="header-anchor">#</a></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: ENOTEMPTY: directory not empty, <span class="built_in">rmdir</span> <span class="string">&#x27;/Users/chengminhua/mathirst.github.io/.deploy_git/archives&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>直接到 deploy_git 文件夹下把文件都删干净，再重新执行 <code>hexo deploy</code> 即可</p>
+<h1><span id="jin-yi-bu-she-zhi-yang-shi">进一步设置样式</span><a href="#jin-yi-bu-she-zhi-yang-shi" class="header-anchor">#</a></h1>
+<p>https://blog.csdn.net/as480133937/article/details/100138838</p>
+<h2><span id="tu-biao">图标</span><a href="#tu-biao" class="header-anchor">#</a></h2>
+<p>https://fontawesome.com/icons/categories/humanitarian</p>
+<h2><span id="yan-se">颜色</span><a href="#yan-se" class="header-anchor">#</a></h2>
+<p>https://www.color-hex.com/</p>
+<h1><span id="xie-shu-xue">写数学</span><a href="#xie-shu-xue" class="header-anchor">#</a></h1>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pandoc --save</span><br><span class="line"></span><br><span class="line">npm install hexo-filter-mathjax</span><br><span class="line"></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<p>站点配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">none</span> <span class="comment"># or &#x27;ams&#x27; or &#x27;all&#x27;</span></span><br><span class="line">  <span class="attr">single_dollars:</span> <span class="literal">true</span> <span class="comment"># enable single dollar signs as in-line math delimiters</span></span><br><span class="line">  <span class="attr">cjk_width:</span> <span class="number">0.9</span> <span class="comment"># relative CJK char width</span></span><br><span class="line">  <span class="attr">normal_width:</span> <span class="number">0.6</span> <span class="comment"># relative normal (monospace) width</span></span><br><span class="line">  <span class="attr">append_css:</span> <span class="literal">true</span> <span class="comment"># add CSS to pages rendered by MathJax</span></span><br><span class="line">  <span class="attr">every_page:</span> <span class="literal">false</span> <span class="comment"># if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span></span><br><span class="line">  <span class="attr">packages:</span> <span class="comment"># extra packages to load</span></span><br><span class="line">  <span class="attr">extension_options:</span> &#123;&#125;</span><br><span class="line">    <span class="comment"># you can put your extension options here</span></span><br><span class="line">    <span class="comment"># see &lt;http://docs.mathjax.org/en/latest/options/input/tex.html#tex-extension-options&gt; for more detail</span></span><br></pre></td></tr></table></figure>
+<p>使用方法</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">On</span> <span class="string">the</span> <span class="string">Electrodynamics</span> <span class="string">of</span> <span class="string">Moving</span> <span class="string">Bodies</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">Physics</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">1905-06-30 12:00:00</span></span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<h3><span id="todo">TODO</span><a href="#todo" class="header-anchor">#</a></h3>
+<p>想用 tikzjax</p>
+<p>https://github.com/kisonecat/tikzjax</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&lt;http://tikzjax.com/v1/fonts.css&gt;&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;&lt;http://tikzjax.com/v1/tikzjax.js&gt;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">尝试</span><br><span class="line">context:</span><br><span class="line">  someHTML:</span><br><span class="line">			<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&lt;http://tikzjax.com/v1/fonts.css&gt;&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;&lt;http://tikzjax.com/v1/tikzjax.js&gt;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>阅读次数</p>
+<p>https://theme-next.iissnan.com/getting-started.html#leanclound-page-views</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.jpg" alt="稻年 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.jpg" alt="稻年 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>稻年
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://mathirst.github.io/2022/11/22/create-blogs-by-hexo/" title="用 Hexo 搭建个人博客">http://mathirst.github.io/2022/11/22/create-blogs-by-hexo/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/programming/" rel="tag"># 编程</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/11/21/test/" rel="prev" title="测试">
+                  <i class="fa fa-chevron-left"></i> 测试
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-droplet"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">稻年</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
