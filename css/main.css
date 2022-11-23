@@ -2559,3 +2559,6 @@ mark.search-keyword {
   box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.35);
   background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
 }
+.box {
+  inline-size: min-content;
+}
