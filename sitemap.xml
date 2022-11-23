@@ -4,7 +4,7 @@
   <url>
     <loc>http://mathirst.github.io/2022/11/22/create-blogs-by-hexo/</loc>
     
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-11-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +58,7 @@
 
   <url>
     <loc>http://mathirst.github.io/</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,14 +66,14 @@
   
   <url>
     <loc>http://mathirst.github.io/tags/programming/</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://mathirst.github.io/tags/test/</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -82,14 +82,14 @@
   
   <url>
     <loc>http://mathirst.github.io/categories/tools/</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://mathirst.github.io/categories/other/</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2022-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
