@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>pretext 介绍</title>
+    <url>/posts/3047400662/</url>
+    <content><![CDATA[<p><code>pretext</code> 是一款对 latex 支持度很高的站点生成工具。</p>
+<h1 id="you-qu-de-bao-cuo">有趣的报错<a href="#you-qu-de-bao-cuo" class="header-anchor">#</a></h1>
+<span id="more"></span>
+<p>搭环境的时候碰到一件很有意思的事情，按照 <a href="https://pretextbook.org/doc/guide/html/quickstart-getting-pretext.html">官网</a> 的说法，我们需要用 <code>python</code> 安装 <code>pretext</code> 如下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install pretext</span><br></pre></td></tr></table></figure>
+<p>我运行后也确实说安装好了，但当我用 <code>pretext --version</code> 检查的时候，提示 <code>command not found: pretext</code>；当我一脸困惑地按照官网的进一步提示，使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install pretext</span><br></pre></td></tr></table></figure>
+<p>却得到报错 <code>No module named pip</code>。查了一下，需要先执行下述命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br></pre></td></tr></table></figure>
+<p>这时的输出才说明了问题所在，里面有这么一段 <code>CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team.</code> 看来是 <code>python -m pip install pretext</code>命令里的 <code>python</code> 被默认为 <code>python 2</code>了，便使用下述命令</p>
+<p><code>python3 -m pip install pretextbook</code></p>
+<p>最后就完成安装了。</p>
+<h1 id="an-zhuang">安装<a href="#an-zhuang" class="header-anchor">#</a></h1>
+<h1 id="ji-ben-shi-yong-he-shuo-ming">基本使用和说明<a href="#ji-ben-shi-yong-he-shuo-ming" class="header-anchor">#</a></h1>
+<p>基本的命令有</p>
+<ul>
+<li><code>pretext new book</code>：书，支持生成网页</li>
+<li><code>xref</code>：带预览的引用</li>
+</ul>
+<h1 id="zhi-chi-de-latex-ming-ling-he-bao">支持的 LaTeX 命令和包<a href="#zhi-chi-de-latex-ming-ling-he-bao" class="header-anchor">#</a></h1>
+<p>4.9.19</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>用 Hexo 搭建个人博客</title>
     <url>/posts/7780/</url>
     <content><![CDATA[<p>做个人主页其实不是件困难的事，毕竟只要把很多东西当成黑箱来用即可。所以本文分为两大部分，第一大部分 <code>太长不看速通版</code> 是给性急的朋友，只要按步骤操作，不求甚解的话应该不到十五分钟就可以打好基本的框架，也就是够到能用的标准，后续只需写 <code>.md</code> 文件即可。</p>
-<p>但就像大多数人使用 <code>LaTeX</code> 一样，大多数人确实不需要知道原理，能用即可；但少部分所谓『强迫症患者』或者有兴趣的人，也确实希望知其然的同时也知其所以然，后半部分即是为了满足这部分需求。</p>
+<p>但就像大多数人使用 <code>LaTeX</code> 一样，大多数人确实不需要知道原理，能用即可，即所谓『内容与样式相分离』原则，用户只需专注于内容，而把样式完全托付给文档类/模板；但少部分所谓『强迫症患者』或者有兴趣的人，也确实希望知其然的同时也知其所以然，后半部分即是为了满足这部分需求。</p>
 <p>本文用 Hexo 搭建个人博客的逻辑主要如下：</p>
 <span id="more"></span>
 <ul>
@@ -15,6 +44,7 @@
 </ul>
 <h1 id="tai-chang-bu-kan-su-tong-ban">太长不看速通版<a href="#tai-chang-bu-kan-su-tong-ban" class="header-anchor">#</a></h1>
 <h2 id="guan-yu-chuang-jian-zhan-dian">关于创建站点<a href="#guan-yu-chuang-jian-zhan-dian" class="header-anchor">#</a></h2>
+<p>进入 GitHub 账户</p>
 <ol>
 <li>
 <p>创建一个仓库（repository，简写为 repo），选为公开（public），名字格式为 <code>xxx.github.io</code>，其中 <code>xxx</code> 就是 GitHub 账户的用户名，例如本站就是 <code>mathirst.github.io</code></p>
@@ -69,7 +99,7 @@
 <h2 id="ce-shi-chang-yong-ming-ling">测试常用命令<a href="#ce-shi-chang-yong-ming-ling" class="header-anchor">#</a></h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 仅本地测试</span></span><br><span class="line">hexo clean &amp;&amp; hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 同步到主页</span></span><br><span class="line">hexo clean &amp;&amp; hexo deploy &amp;&amp; hexo server</span><br></pre></td></tr></table></figure>
 <h2 id="bao-cuo">报错<a href="#bao-cuo" class="header-anchor">#</a></h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Error: ENOTEMPTY: directory not empty, <span class="built_in">rmdir</span> <span class="string">'/Users/chengminhua/mathirst.github.io/.deploy_git/archives'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Error: ENOTEMPTY: directory not empty, <span class="built_in">rmdir</span> <span class="string">'/Users/usrname/mathirst.github.io/.deploy_git/archives'</span></span><br></pre></td></tr></table></figure>
 <p>直接到 deploy_git 文件夹下把文件都删干净，再重新执行 <code>hexo deploy</code> 即可</p>
 <h1 id="jin-yi-bu-she-zhi-yang-shi">进一步设置样式<a href="#jin-yi-bu-she-zhi-yang-shi" class="header-anchor">#</a></h1>
 <h2 id="can-kao-lian-jie">参考链接<a href="#can-kao-lian-jie" class="header-anchor">#</a></h2>
