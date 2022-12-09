@@ -83,14 +83,14 @@
 
   
   <url>
-    <loc>http://mathirst.github.io/tags/%E5%A4%96%E6%B1%87/</loc>
+    <loc>http://mathirst.github.io/tags/programming/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/tags/programming/</loc>
+    <loc>http://mathirst.github.io/tags/%E5%A4%96%E6%B1%87/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -106,14 +106,14 @@
 
   
   <url>
-    <loc>http://mathirst.github.io/categories/%E6%8A%95%E6%9C%BA/</loc>
+    <loc>http://mathirst.github.io/categories/tools/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/categories/tools/</loc>
+    <loc>http://mathirst.github.io/categories/speculation/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
