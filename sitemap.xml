@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://mathirst.github.io/posts/201170673/</loc>
+    
+    <lastmod>2022-12-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://mathirst.github.io/about/index.html</loc>
+    
+    <lastmod>2022-12-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://mathirst.github.io/posts/7780/</loc>
     
     <lastmod>2022-12-09</lastmod>
@@ -21,15 +39,6 @@
   
   <url>
     <loc>http://mathirst.github.io/posts/63534/</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://mathirst.github.io/about/index.html</loc>
     
     <lastmod>2022-11-22</lastmod>
     
@@ -74,6 +83,13 @@
 
   
   <url>
+    <loc>http://mathirst.github.io/tags/%E5%A4%96%E6%B1%87/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://mathirst.github.io/tags/programming/</loc>
     <lastmod>2022-12-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -88,6 +104,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://mathirst.github.io/categories/%E6%8A%95%E6%9C%BA/</loc>
+    <lastmod>2022-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>http://mathirst.github.io/categories/tools/</loc>
