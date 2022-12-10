@@ -1,6 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>外汇</title>
+    <url>/posts/3383396820/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
+    <title>外汇交易</title>
+    <url>/posts/201170673/</url>
+    <content><![CDATA[<p>首先，外汇是一个风险很高的交易品种，不适合绝大多数交易者，需要一定的理论基础和交易经验。</p>
+<h2 id="bei-jing">背景<a href="#bei-jing" class="header-anchor">#</a></h2>
+<p>我第一次听说外汇市场，是在读到金融大鳄索罗斯的传说的时候。索罗斯，一个臭名昭著的国际炒家，1992年狙击英镑，1994年狙击墨西哥比索，尤其是1997年单日重锉泰国的泰铢17%，紧接着一波带走和泰国并称『亚洲四小虎』的印尼、马来西亚、菲律宾，旋即引爆东南亚金融风暴，相继波及中国台湾、韩国、日本，造成了著名的亚洲金融危机。</p>
+<p>当时的我，初出茅庐，对市场的认识还很粗浅，很难想象一个人可以让一个国家的金融系统陷入混乱，甚至引爆一个地区的金融危机。在震惊之余，尽管我知道这种做法在任何意义上都是『不道德』的，但我也意识到这无疑表明，外汇市场蕴含了巨大的投机机会。</p>
+<p>但出于对市场的敬畏，我一直没有真地尝试进入外汇市场。但出于一些原因，我认为较好的入场时机已经出现，遂决定参与外汇交易。</p>
+<p>不过很可惜，中文能搜到的外汇交易内容少之又少，本文就是提供一个基本的介绍。</p>
+<h2 id="wai-hui-shi-chang-jian-jie">外汇市场简介<a href="#wai-hui-shi-chang-jian-jie" class="header-anchor">#</a></h2>
+<p>外汇市场，顾名思义，交易外汇的市场。其重要性产生了一个特有的合成词，forex，即 foreign exchange，简写为 FX。正如股票价格由股市中无数参与其中的交易者共同决定一样，在外汇市场上的交易，同样决定了各国货币的相对价格，即汇率。</p>
+<p>这是一个极其庞大的市场，</p>
+<h2 id="yi-xie-zhu-yu-ci-hui-biao">一些术语词汇表<a href="#yi-xie-zhu-yu-ci-hui-biao" class="header-anchor">#</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>英文</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>speculation, speculator</td>
+<td>投机，投机客</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>投机</category>
+      </categories>
+      <tags>
+        <tag>外汇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pretext 介绍</title>
+    <url>/posts/3047400662/</url>
+    <content><![CDATA[<p><code>pretext</code> 是一款对 latex 支持度很高的站点生成工具。</p>
+<h1 id="you-qu-de-bao-cuo">有趣的报错<a href="#you-qu-de-bao-cuo" class="header-anchor">#</a></h1>
+<span id="more"></span>
+<p>搭环境的时候碰到一件很有意思的事情，按照 <a href="https://pretextbook.org/doc/guide/html/quickstart-getting-pretext.html">官网</a> 的说法，我们需要用 <code>python</code> 安装 <code>pretext</code> 如下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install pretext</span><br></pre></td></tr></table></figure>
+<p>我运行后也确实说安装好了，但当我用 <code>pretext --version</code> 检查的时候，提示 <code>command not found: pretext</code>；当我一脸困惑地按照官网的进一步提示，使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install pretext</span><br></pre></td></tr></table></figure>
+<p>却得到报错 <code>No module named pip</code>。查了一下，需要先执行下述命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br></pre></td></tr></table></figure>
+<p>这时的输出才说明了问题所在，里面有这么一段 <code>CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team.</code> 看来是 <code>python -m pip install pretext</code>命令里的 <code>python</code> 被默认为 <code>python 2</code>了，便使用下述命令</p>
+<p><code>python3 -m pip install pretextbook</code></p>
+<p>最后就完成安装了。</p>
+<h1 id="an-zhuang">安装<a href="#an-zhuang" class="header-anchor">#</a></h1>
+<h1 id="ji-ben-shi-yong-he-shuo-ming">基本使用和说明<a href="#ji-ben-shi-yong-he-shuo-ming" class="header-anchor">#</a></h1>
+<p>基本的命令有</p>
+<ul>
+<li><code>pretext new book</code>：书，支持生成网页</li>
+<li><code>xref</code>：带预览的引用</li>
+</ul>
+<h1 id="zhi-chi-de-latex-ming-ling-he-bao">支持的 LaTeX 命令和包<a href="#zhi-chi-de-latex-ming-ling-he-bao" class="header-anchor">#</a></h1>
+<p>4.9.19</p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>用 Hexo 搭建个人博客</title>
     <url>/posts/7780/</url>
     <content><![CDATA[<p>做个人主页其实不是件困难的事，毕竟只要把很多东西当成黑箱来用即可。所以本文分为两大部分，第一大部分 <code>太长不看速通版</code> 是给性急的朋友，只要按步骤操作，不求甚解的话应该不到十五分钟就可以打好基本的框架，也就是够到能用的标准，后续只需写 <code>.md</code> 文件即可。</p>
@@ -97,47 +183,6 @@
       <categories>
         <category>工具论</category>
       </categories>
-      <tags>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>forex-inntro</title>
-    <url>/posts/201170673/</url>
-    <content><![CDATA[
-]]></content>
-      <categories>
-        <category>投机</category>
-      </categories>
-      <tags>
-        <tag>外汇</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pretext 介绍</title>
-    <url>/posts/3047400662/</url>
-    <content><![CDATA[<p><code>pretext</code> 是一款对 latex 支持度很高的站点生成工具。</p>
-<h1 id="you-qu-de-bao-cuo">有趣的报错<a href="#you-qu-de-bao-cuo" class="header-anchor">#</a></h1>
-<span id="more"></span>
-<p>搭环境的时候碰到一件很有意思的事情，按照 <a href="https://pretextbook.org/doc/guide/html/quickstart-getting-pretext.html">官网</a> 的说法，我们需要用 <code>python</code> 安装 <code>pretext</code> 如下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install pretext</span><br></pre></td></tr></table></figure>
-<p>我运行后也确实说安装好了，但当我用 <code>pretext --version</code> 检查的时候，提示 <code>command not found: pretext</code>；当我一脸困惑地按照官网的进一步提示，使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install pretext</span><br></pre></td></tr></table></figure>
-<p>却得到报错 <code>No module named pip</code>。查了一下，需要先执行下述命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br></pre></td></tr></table></figure>
-<p>这时的输出才说明了问题所在，里面有这么一段 <code>CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team.</code> 看来是 <code>python -m pip install pretext</code>命令里的 <code>python</code> 被默认为 <code>python 2</code>了，便使用下述命令</p>
-<p><code>python3 -m pip install pretextbook</code></p>
-<p>最后就完成安装了。</p>
-<h1 id="an-zhuang">安装<a href="#an-zhuang" class="header-anchor">#</a></h1>
-<h1 id="ji-ben-shi-yong-he-shuo-ming">基本使用和说明<a href="#ji-ben-shi-yong-he-shuo-ming" class="header-anchor">#</a></h1>
-<p>基本的命令有</p>
-<ul>
-<li><code>pretext new book</code>：书，支持生成网页</li>
-<li><code>xref</code>：带预览的引用</li>
-</ul>
-<h1 id="zhi-chi-de-latex-ming-ling-he-bao">支持的 LaTeX 命令和包<a href="#zhi-chi-de-latex-ming-ling-he-bao" class="header-anchor">#</a></h1>
-<p>4.9.19</p>
-]]></content>
       <tags>
         <tag>编程</tag>
       </tags>
