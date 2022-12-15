@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://mathirst.github.io/posts/7780/</loc>
+    <loc>http://mathirst.github.io/about/index.html</loc>
     
     <lastmod>2022-12-15</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/about/index.html</loc>
+    <loc>http://mathirst.github.io/posts/7780/</loc>
     
     <lastmod>2022-12-15</lastmod>
     
@@ -83,14 +83,14 @@
 
   
   <url>
-    <loc>http://mathirst.github.io/tags/programming/</loc>
+    <loc>http://mathirst.github.io/tags/test/</loc>
     <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/tags/test/</loc>
+    <loc>http://mathirst.github.io/tags/programming/</loc>
     <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -99,14 +99,14 @@
 
   
   <url>
-    <loc>http://mathirst.github.io/categories/tools/</loc>
+    <loc>http://mathirst.github.io/categories/other/</loc>
     <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/categories/other/</loc>
+    <loc>http://mathirst.github.io/categories/tools/</loc>
     <lastmod>2022-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
