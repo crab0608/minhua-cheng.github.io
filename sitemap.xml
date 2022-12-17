@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://mathirst.github.io/posts/3383396820/</loc>
+    <loc>http://mathirst.github.io/posts/1764305188/</loc>
     
     <lastmod>2022-12-17</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/posts/1764305188/</loc>
+    <loc>http://mathirst.github.io/posts/3383396820/</loc>
     
     <lastmod>2022-12-17</lastmod>
     
@@ -115,6 +115,13 @@
   </url>
   
   <url>
+    <loc>http://mathirst.github.io/categories/speculation/</loc>
+    <lastmod>2022-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://mathirst.github.io/categories/math/</loc>
     <lastmod>2022-12-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -123,13 +130,6 @@
   
   <url>
     <loc>http://mathirst.github.io/categories/other/</loc>
-    <lastmod>2022-12-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://mathirst.github.io/categories/speculation/</loc>
     <lastmod>2022-12-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
