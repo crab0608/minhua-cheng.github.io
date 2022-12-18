@@ -4,7 +4,7 @@
   <url>
     <loc>http://mathirst.github.io/posts/1764305188/</loc>
     
-    <lastmod>2022-12-17</lastmod>
+    <lastmod>2022-12-18</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +85,7 @@
 
   <url>
     <loc>http://mathirst.github.io/</loc>
-    <lastmod>2022-12-17</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -93,14 +93,14 @@
   
   <url>
     <loc>http://mathirst.github.io/tags/programming/</loc>
-    <lastmod>2022-12-17</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://mathirst.github.io/tags/test/</loc>
-    <lastmod>2022-12-17</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -108,29 +108,29 @@
 
   
   <url>
-    <loc>http://mathirst.github.io/categories/tools/</loc>
-    <lastmod>2022-12-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://mathirst.github.io/categories/speculation/</loc>
-    <lastmod>2022-12-17</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://mathirst.github.io/categories/math/</loc>
-    <lastmod>2022-12-17</lastmod>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://mathirst.github.io/categories/other/</loc>
-    <lastmod>2022-12-17</lastmod>
+    <lastmod>2022-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://mathirst.github.io/categories/tools/</loc>
+    <lastmod>2022-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
