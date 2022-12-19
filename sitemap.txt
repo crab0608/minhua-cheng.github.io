@@ -12,5 +12,5 @@ http://mathirst.github.io/tags/programming/
 http://mathirst.github.io/tags/test/
 http://mathirst.github.io/categories/tools/
 http://mathirst.github.io/categories/speculation/
-http://mathirst.github.io/categories/other/
 http://mathirst.github.io/categories/math/
+http://mathirst.github.io/categories/other/
