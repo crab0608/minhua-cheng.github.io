@@ -11,15 +11,13 @@ http://mathirst.github.io/minimal/output/html/knowl/p-1.html
 http://mathirst.github.io/minimal/output/html/knowl/p-2.html
 http://mathirst.github.io/minimal/README.html
 http://mathirst.github.io/minimal/codechat_config.json
-http://mathirst.github.io/book-example/README.html
-http://mathirst.github.io/book-example/codechat_config.json
 http://mathirst.github.io/tags/index.html
 http://mathirst.github.io/categories/index.html
 http://mathirst.github.io/test/index.html
 http://mathirst.github.io/
 http://mathirst.github.io/tags/programming/
 http://mathirst.github.io/tags/test/
+http://mathirst.github.io/categories/tools/
 http://mathirst.github.io/categories/speculation/
 http://mathirst.github.io/categories/math/
 http://mathirst.github.io/categories/other/
-http://mathirst.github.io/categories/tools/
