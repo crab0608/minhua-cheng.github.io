@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/minimal/output/html/index.html</loc>
+    <loc>http://mathirst.github.io/minimal/output/html/hello.html</loc>
     
     <lastmod>2022-11-24</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/minimal/output/html/hello.html</loc>
+    <loc>http://mathirst.github.io/minimal/output/html/index.html</loc>
     
     <lastmod>2022-11-24</lastmod>
     
@@ -101,6 +101,15 @@
   </url>
   
   <url>
+    <loc>http://mathirst.github.io/minimal/README.html</loc>
+    
+    <lastmod>2022-11-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://mathirst.github.io/minimal/codechat_config.json</loc>
     
     <lastmod>2022-11-23</lastmod>
@@ -110,7 +119,16 @@
   </url>
   
   <url>
-    <loc>http://mathirst.github.io/minimal/README.html</loc>
+    <loc>http://mathirst.github.io/book-example/README.html</loc>
+    
+    <lastmod>2022-11-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://mathirst.github.io/book-example/codechat_config.json</loc>
     
     <lastmod>2022-11-23</lastmod>
     
@@ -171,13 +189,6 @@
 
   
   <url>
-    <loc>http://mathirst.github.io/categories/tools/</loc>
-    <lastmod>2022-12-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://mathirst.github.io/categories/speculation/</loc>
     <lastmod>2022-12-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -193,6 +204,13 @@
   
   <url>
     <loc>http://mathirst.github.io/categories/other/</loc>
+    <lastmod>2022-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://mathirst.github.io/categories/tools/</loc>
     <lastmod>2022-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
