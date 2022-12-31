@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext>
+  <article xml:id="hello">
+    <title>Hello World!</title>
+    <p>This is a PreTeXt document.</p>
+
+    <introduction>
+      <p>
+        这是介绍
+      </p>
+    </introduction>
+
+    <section xml:id="sec-简单">
+      <title>简单介绍</title>
+      等等
+    </section>
+  </article>
+</pretext>
